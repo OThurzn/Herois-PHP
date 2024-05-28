@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heroi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script>
+
+        let universo = prompt("Digite um universo [marvel/dc]:").toLowerCase();
+
+        if (universo == "marvel") {
+            let heroi = prompt("Digite um herói da Marvel:").toLowerCase();
+            let qntd = prompt("Digite quantas vezes você quer ver o " + heroi + ":").toLowerCase();
+
+            document.write("<p>" + heroi.charAt(0).toUpperCase() + heroi.slice(1) + "</p>");
+
+            for (x = 1; x <= qntd; x++) {
+                switch (heroi) {
+                    case "pantera negra":
+                        document.write("<img src='imgs/pantera-negra.png'>");
+                        break;
+
+                    case "demolidor":
+                        document.write("<img src='imgs/demolidor.png'>");
+                        break;
+                        document.write("<img src='imgs/coisa.png'>");
+                    case "coisa":
+                        document.write("<img src='imgs/homem-aranha.png'>");
+                        break;
+
+                    case "homem aranha":
+                    case "spiderman":
+                        document.write("<img src='imgs/homem-aranha.png'>");
+                        break;
+
+                    case "homem de ferro":
+                    case "ironman":
+                        document.write("<img src='imgs/homem-de-ferro.png'>");
+                        break;
+
+                    default:
+                        alert("heroi inválido");
+                }
+            }
+        }
+        else if (universo == "dc") {
+            let heroi = prompt("Digite um herói da DC:").toLowerCase();
+            let qntd = prompt("Digite quantas vezes você quer ver esse herói:").toLowerCase();
+
+            document.write("<p>" + heroi.charAt(0).toUpperCase() + heroi.slice(1) + "</p>");
+
+            x = 1;
+            while (x <= qntd) {
+
+                let heroii  = ((heroi == "super homem" || heroi == "superman") ? document.write("<img src='imgs/super-homem.png'>") :
+                    (heroi == "batman") ? document.write("<img src='imgs/batman.png'>") :
+                        (heroi == "besouro azul") ? document.write("<img src='imgs/besouro-azul.png'>") :
+                            (heroi == "caçador de marte") ? document.write("<img src='imgs/caçador-de-marte.png'>") :
+                                (heroi == "flash") ? document.write("<img src='imgs/flash.png'>") :
+                                    alert("heroi inválido"))
+                x++;
+            }
+        }
+    </script>
+</body>
+
+</html>
