@@ -51,7 +51,7 @@
                 <div class="modal-body">
                     <form action="index.php" method="post">
                         <label class="form-label">NOME DO HERÓI</label>
-                        <input type="text" name="campo_nome" class="form-control mb-3" placeholder="Ex.: Homem-Aranha">
+                        <input type="text" name="campo_nome" class="form-control mb-3" placeholder="Ex.: Homem Aranha">
 
                         <label class="form-label">UNIVERSO</label>
 
@@ -66,7 +66,7 @@
                             </div>
                         </div>
 
-                        <label class="form-label">QUANTAS VEZES DESEJA</label>
+                        <label class="form-label">QUANTAS VEZES DESEJA VE-LO:</label>
                         <input type="number" name="campo_quantidade" class="form-control mb-3" placeholder="1..2..3">
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
